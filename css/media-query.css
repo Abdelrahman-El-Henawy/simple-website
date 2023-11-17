@@ -1,0 +1,143 @@
+@media screen and (min-width: 993px){
+    .bigText{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 992px){
+    .homeSection{
+        flex-direction: column-reverse;
+    }
+    .rightSide{
+        width: 100%;
+    }
+    .rightSide img{
+        width: 100%;
+    }
+    .container{
+        max-width: 720px;
+    }
+    .home__leftSide{
+        width: 100%;
+        text-align: center;
+        margin-top: 2em;
+    }
+    .bigText{
+        font-size: 3.5rem;
+    }
+    .btn{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .card,.pics{
+        width: 47%;
+        margin: 0 auto;
+    }
+    .pics{
+        margin-bottom: 2rem;
+    }
+
+
+}
+@media screen and (max-width: 768px){
+    .card,.pics{
+        width: 100%;
+    }
+    .pics{
+        margin-bottom: 2rem;
+    }
+
+} 
+@media screen and (max-width: 565px) {
+    .bigText{
+        font-size: 2.7rem;
+    }
+}
+@media screen and (max-width: 564px) {
+    .bigText{
+        font-size: 2.3rem;
+    }
+    .header p{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1200px){
+    .openClosedDiv{
+        display: block;
+    }
+    .fa-close{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+    body:has(.openClosedIcon:checked) .fa-close{
+        display: block;
+    }
+    body:has(.openClosedIcon:checked) .fa-bars{
+        display: none;
+    }
+    header ul{
+        position: fixed;
+        width: 350px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        margin-inline: 0;
+        transition: var(--transition);
+        transform: translateX(100%);
+    }
+    header ul li{
+        margin-top: 70px;
+        margin-left: 0;
+    }
+    header ul li a{
+        color: var(--textColorHover) !important;
+    }
+    body:has(.openClosedIcon:checked) header ul{
+        transform: translateX(0);
+    }
+    body:has(.openClosedIcon:checked) header{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #ffffff79;
+    }
+    .icons{
+        position: fixed;
+        top: 5%;
+        right: 3%;
+    }
+    
+}
+@media screen and (max-width: 993px){
+    .contact__container{
+        flex-direction: column;
+    }
+    .contact__column__1,.contact__column__2{
+        width: 100%;
+        padding: 0;
+    }
+    .email{
+        margin-top: 0;
+    }
+
+    .nameEmail{
+        flex-direction: column;
+        gap: 0;
+    }
+    .emailInput,.nameInput{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .footer__column1,.footer__column3,.footer__column2{
+        width: 100%;
+    }
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/darkMode.css">
+    <link rel="stylesheet" href="./css/media-query.css">
+    <title>Mealify</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h2>mealify<span style="color:red">.</span></h2>
+            <ul>
+                <li><a class="link home-link" href="#home">home</a></li>
+                <li><a class="link chefs-link" href="#chefs">chefs</a></li>
+                <li><a class="link gallery-link" href="#gallery">gallery</a></li>
+                <li><a class="link contact-link" href="#contact">contact</a></li>
+            </ul>
+            <div class="icons">
+                <div class="lightDarkDiv">
+                    <input class="lightDarkIcon" type="checkbox">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <div class="openClosedDiv">
+                    <input class="openClosedIcon" type="checkbox">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-close"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="container homeSection">
+            <div class="home__leftSide">
+                <p class="bigText">Enjoy Your Healthy <br/> Delicious Food</p>
+                <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                <div class="btn">
+                    <button class="btn1">Book a Table</button>
+                    <button class="btn2">
+                        <a class="linkIcon" href="https://www.youtube.com">
+                            <span><i class="fa-solid fa-circle-play"></i></span>
+                            <span class="btnSpan">Watch a Video</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="rightSide">
+                <img src="./img/hero-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="background background_1"></div>
+    <section id="chefs" class="chefs">
+        <div class="container chefsSection">
+            <div class="header">
+                <p>chefs</p>
+                <p>our <span>professional</span> chefs</p>
+            </div>
+            <div class="wrapper">
+                <div class="card"> 
+                    <div class="card__socials">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <picture class="card__img">
+                        <img src="./img/chefs/chefs-1.jpg" alt="">
+                    </picture>
+                    <div class="card__content">
+                        <h2>Walter White</h2>
+                        <h4>Master Chef</h4>
+                        <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__socials">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <picture class="card__img">
+                        <img src="./img/chefs/chefs-2.jpg" alt="">
+                    </picture>
+                    <div class="card__content">
+                        <h2>Sarah Jhonson</h2>
+                        <h4>Patissier</h4>
+                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__socials">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <picture class="card__img">
+                        <img src="./img/chefs/chefs-3.jpg" alt="">
+                    </picture>
+                    <div class="card__content">
+                        <h2>William Anderson</h2>
+                        <h4>Cook</h4>
+                        <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="background background_2"></div>
+    <section id="gallery" class="gallery">
+        <div class="container gallerySection">
+            <div class="header">
+                <p>gallery</p>
+                <p>check <span>our gallery</span></p>
+            </div>
+            <div class="gallery__wrapper">
+                <div class="gallery__btns">
+                    <button id="all" class=" active__btn filter-btn gallery__btn">all</button>
+                    <button id="pizza"  class=" filter-btn gallery__btn">pizza</button>
+                    <button id="burger" class=" filter-btn gallery__btn">burger</button>
+                    <button id="steak" class=" filter-btn gallery__btn">steak</button>
+                    <button id="strips" class=" filter-btn gallery__btn">strips</button>
+                    <button id="kofta" class=" filter-btn gallery__btn">kofta</button>
+                </div>
+            </div>
+            <div class="gallery__pictures">
+                <div class="filter-item pics all burger ">
+                    <img src="./img/gallery/burger-1.jpg" alt="">
+                    <div class="overlay">
+                        <p>burger</p>
+                        <p>Burgers are a delicious marriage of meat, cheese, and bread.</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all kofta">
+                    <img src="./img/gallery/kofta-1.jpg" alt="">
+                    <div class="overlay">
+                        <p>kofta</p>
+                        <p>Best kofta in the Middle East.</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all pizza">
+                    <img src="./img/gallery/pizza-1.jpg" alt="">
+                    <div class="overlay">
+                        <p>pizza</p>
+                        <p>I want someone to look at me the same way I look at pizza.</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all steak">
+                    <img src="./img/gallery/steak-1.jpg" alt="">
+                    <div class="overlay">
+                        <p>steak</p>
+                        <p>Steak is tasty, and cows are stupid.</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all strips">
+                    <img src="./img/gallery/strips-1.jpg" alt="">
+                    <div class="overlay">
+                        <p>strips</p>
+                        <p>There's no world without fried chicken.</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all strips">
+                    <img src="./img/gallery/strips-2.jpg" alt="">
+                    <div class="overlay">
+                        <p>strips</p>
+                        <p>Nothing beats the taste of farm-fresh, free-range chicken.</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all burger">
+                    <img src="./img/gallery/burger-2.avif" alt="">
+                    <div class="overlay">
+                        <p>burger</p>
+                        <p>A burger is a work of art that satisfies both hunger and soul.</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all steak">
+                    <img src="./img/gallery/steak-2.jpg" alt="">
+                    <div class="overlay">
+                        <p>steak</p>
+                        <p>Why would I want a burger if I can have steak instead?</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all pizza">
+                    <img src="./img/gallery/pizza-2.jpg" alt="">
+                    <div class="overlay">
+                        <p>pizza</p>
+                        <p>Pizza is like a blank canvas. You can create anything you want on it..</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all kofta">
+                    <img src="./img/gallery/kofta-2.jpg" alt="">
+                    <div class="overlay">
+                        <p>kofta</p>
+                        <p>Diet food is not a meal, It's a Kofta.</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all burger">
+                    <img src="./img/gallery/burger-3.avif" alt="">
+                    <div class="overlay">
+                        <p>burger</p>
+                        <p>I'm 'beef-ing' up my happiness with this burger.</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all steak">
+                    <img src="./img/gallery/steak-3.jpg" alt="">
+                    <div class="overlay">
+                        <p>steak</p>
+                        <p>If I can’t grab it by the bone and eat it like a brute, then what's the point?</p>
+                    </div>
+                </div>
+                <div class="filter-item pics all strips">
+                    <img src="./img/gallery/strips-3.avif" alt="">
+                    <div class="overlay">
+                        <p>strips</p>
+                        <p>Peace is achieved by a perfect serving of chicken.</p>
+                    </div>
+                </div>
+                <picture class="filter-item pics all kofta">
+                    <img src="./img/gallery/kofta-3.jpg" alt="">
+                    <div class="overlay">
+                        <p>kofta</p>
+                        <p>There's nothing in the world that good Kofta can't fix it.</p>
+                    </div>
+                </picture>
+                <picture class="filter-item pics all pizza">
+                    <img src="./img/gallery/pizza-3.avif" alt="">
+                    <div class="overlay">
+                        <p>pizza</p>
+                        <p>Pizza is the only food that can cheer me up on a bad day.</p>
+                    </div>
+                </picture> 
+            </div>
+        </div>
+    </section>
+    <div class="background background_3"></div>
+    <section id="contact" class="contact">
+        <div class="container gallerySection">
+            <div class="header">
+                <p>contact</p>
+                <p>need help? <span>contact us</span></p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.1914372003032!2d31.323383652785214!3d30.072248434902836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e4765f40b8b%3A0x57c1bbda4f163528!2sEl%20Tayaran%20St%2C%20El-Tawfik%2C%20Nasr%20City%2C%20Cairo%20Governorate%204451015!5e0!3m2!1sen!2seg!4v1699742665826!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact__container">
+                <div class="contact__column__1">
+                    <div class="address box">
+                        <div class="contactIcon">
+                            <i class="fa-solid fa-map"></i>
+                        </div>
+                        <div>
+                            <p class="firstText">our address</p>
+                            <p class="secondText">106 El Tayaran Street,Nasr City, Cairo | Egypt</p>
+                        </div>
+                    </div>
+                    <div class="callUs box">
+                        <div class="contactIcon">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <div>
+                            <p class="firstText">call us</p>
+                            <p class="secondText">+2 - 01148505643</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__column__2">
+                    <div class="email box">
+                        <div class="contactIcon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="firstText">email us</p>
+                            <p class="secondText">abdo3me@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="openingHours box">
+                        <div class="contactIcon">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <div>
+                            <p class="firstText">opening hours</p>
+                            <p class="secondText"> <span>Mon-Sat:</span> 11AM - 23PM; <span>Friday:</span> Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <form action="">
+                    <div class="nameEmail">
+                        <input type="text" class="nameInput" placeholder="Your Name">
+                        <input type="email" class="emailInput" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <input type="text" class="subject" placeholder="Subject">
+                    </div>
+                    <div>
+                        <textarea placeholder="Write A Constructive Message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button class="formBtn" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+            
+    </section>
+    <footer>
+        <div class="footer__column1">
+            <h2> <img class="imgFooter" src="./img/favicon.png" alt=""> mealify<span style="color:red">.</span></h2>
+            <p class="footer__column1--text">Mealify is a restaurant landing page that offers a delicious dining experience to its customers.</p>
+            <h3 class="footer__column1--h3">social media</h3>
+            <hr>
+            <ul class="footer__column1--ul">
+                <li> <i class="fa-brands fa-twitter"></i> </li>
+                <li> <i class="fa-brands fa-facebook"></i> </li>
+                <li> <i class="fa-brands fa-instagram"></i> </li>
+                <li> <i class="fa-brands fa-linkedin"></i> </li>
+            </ul>
+        </div>
+        <div class="footer__column2">
+            <h2 class="footer__column2--h2">Subscribe our Newsletter</h2>
+            <p class="footer__column2--text">Don't miss out on our latest menu updates and exclusive offers - join our newsletter today and stay up-to-date with all things Mealify!</p>
+            <div class="footer__column2--inputDiv">
+                <input class="footer__column2--input" placeholder="Enter Your Email Adress" type="text">
+                <button class="footer__column2--btn"> <i class="fa-solid fa-envelope"></i> Subscribe</button>
+            </div>
+            <h3 class="footer__column2--h3">Quick Links</h3>
+            <ul class="footer__column2--ul">
+                <li><a href="#home" > <div><i class="fa-solid fa-angle-right"></i></div> <div>home</div></a></li>
+                <li><a href="#chefs"><i class="fa-solid fa-angle-right"></i> chefs</a></li>
+                <li><a href="#gallery"><i class="fa-solid fa-angle-right"></i>gallery</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-angle-right"></i>contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>menu</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>our partners</a></li>
+            </ul>
+        </div>
+        <div class="footer__column3">
+            <h2 class="footer__column3--h3">Get in Touch</h2>
+            <ul class="footer__column3--ul">
+                <li> <i class="fa-solid fa-location-pin"></i> <span>A108 Adam Street, New York, NY 535022</span> </li>
+                <li> <i class="fa-solid fa-envelope"></i> <span>contact@example.com</span> </li>
+                <li> <i class="fa-solid fa-phone"></i> <span>+1 5589 55488 55</span> </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

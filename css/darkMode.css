@@ -1,0 +1,122 @@
+:root{
+    --header-backgroundColor: #171717;
+    --home-backgroundColor: #252525;
+    --contact-backgroundColor: #202020;
+    --secondary-linkColor: #C17E1F;
+    --secondary-buttonColor: #C17E1F;
+    --secondary-buttonHoverColor: #D78C23;
+    --chefs-backgroundColor: #202020;
+    --chefsCard-backgroundColor: #171717;
+    --gallery-backgroundColor: #252525;
+}
+
+body:has(.lightDarkIcon:checked):has(.home:target) .home-link,
+body:has(.lightDarkIcon:checked):has(.chefs:target) .chefs-link,
+body:has(.lightDarkIcon:checked):has(.gallery:target) .gallery-link,
+body:has(.lightDarkIcon:checked):has(.contact:target) .contact-link{
+    color: var(--main-textColor);
+}
+body:has(.lightDarkIcon:checked) .link:hover,
+body:has(.lightDarkIcon:checked) .active-link,
+body:has(.lightDarkIcon:checked) .bigText,
+body:has(.lightDarkIcon:checked) .header p:nth-child(2),
+body:has(.lightDarkIcon:checked) .card__content,
+body:has(.lightDarkIcon:checked) .btnSpan{
+    color: #fff;
+}
+body:has(.lightDarkIcon:checked) .chefs{
+    background-color: var(--chefs-backgroundColor);
+}
+body:has(.lightDarkIcon:checked) .card{
+    background-color: var(--chefsCard-backgroundColor);
+}
+
+body:has(.lightDarkIcon:checked) .header p:nth-child(2) span{
+    color: var(--secondary-linkColor)
+}
+body:has(.lightDarkIcon:checked) .btn2:hover .linkIcon .fa-circle-play,
+body:has(.lightDarkIcon:checked) .link::after {
+    background-color: var(--secondary-buttonHoverColor);
+}
+body:has(.lightDarkIcon:checked) .btn1 {
+    background-color: var(--secondary-buttonColor);
+}
+body:has(.lightDarkIcon:checked) .btn2:hover .linkIcon .btnSpan{
+    color: var(--secondary-buttonHoverColor);
+}
+body:has(.lightDarkIcon:checked) .btn2 i::after{
+    border: 8px solid var(--secondary-buttonColor);
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left-color: transparent;
+    border-top-color:transparent;
+    left: -20%;
+    top: -20%;
+    border-radius: 50%;
+    transform: rotate(135deg);
+}
+body:has(.lightDarkIcon:checked) .fa-moon{
+    display: none;
+}
+body:has(.lightDarkIcon:checked) .fa-sun{
+    color: #fff;
+}
+body:has(.lightDarkIcon:checked) header{
+    background-color: var(--header-backgroundColor);
+}
+body:has(.lightDarkIcon:checked) header h2{
+    color: #fff;
+}
+body:has(.lightDarkIcon:checked) .home{
+    background-color: var(--home-backgroundColor);
+}
+body:has(.lightDarkIcon:checked) .contact{
+    background-color: var(--contact-backgroundColor);
+}
+body:has(.lightDarkIcon:checked) .fa-sun{
+    display: block;
+}
+@media screen and (max-width: 1200px) {
+    body:has(.lightDarkIcon:checked) .fa-bars{
+        color: var(--main-textColor);
+    }
+    body:has(.openClosedIcon:checked) .fa-sun{
+        color: var(--header-backgroundColor);
+    }
+}
+body:has(.lightDarkIcon:checked) .gallery{
+    background-color: var(--gallery-backgroundColor);
+}
+body:has(.lightDarkIcon:checked) .box{
+    background-color: #0D0D0D;
+    color: var(--main-textColor)
+}
+body:has(.lightDarkIcon:checked) .formBtn{
+    background-color: var(--secondary-buttonHoverColor);
+}
+body:has(.lightDarkIcon:checked) .form{
+    background-color: #000;
+}
+body:has(.lightDarkIcon:checked) .contactIcon{
+    background-color: var(--secondary-linkColor);
+}
+body:has(.lightDarkIcon:checked)  .gallery__btn:hover{
+    color: var(--secondary-buttonColor)
+}
+body:has(.lightDarkIcon:checked) .background_1{
+    background-image: url("../img/gallery/header-1-dark.jpeg");
+}
+body:has(.lightDarkIcon:checked) .background_2{
+    background-image: url("../img/gallery/header-2-dark.jpg");
+}
+body:has(.lightDarkIcon:checked) .background_3{
+    background-image: url("../img/gallery/header-3-dark.jpeg");
+}
+body:has(.lightDarkIcon:checked) .footer__column3--ul li i{
+    color: var(--secondary-buttonHoverColor)
+}
+body:has(.lightDarkIcon:checked) .footer__column2--btn{
+    background-color: var(--secondary-buttonColor);
+}
